@@ -1,0 +1,132 @@
+theme:
+  name: 'material'
+  palette:
+    primary: 'Blue'
+    accent: 'Blue'
+  feature:
+    tabs: true
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+  - admonition
+  - toc:
+      permalink: true
+use_directory_urls: false
+extra:
+  search:
+    tokenizer: '[\s\-\.]+'
+#  social:
+#    - type: 'github'
+#      link: 'https://github.com/openlilylib'
+#    - type: 'wordpress'
+#      link: 'http://lilypondblog.org'
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized
+use_directory_urls: false
+repo_url: https://github.com/Jean-Abou-Samra/lilyponds-scheme/
+site_dir: 'site'
+#edit_uri: edit/master/scheme/docs
+site_name: Scheme (in LilyPond)
+
+
+nav:
+  - Introduction:
+    - Home: introduction/index.md
+    - "LilyPond's Scheme": 'introduction/lilyponds-scheme.md'
+    - Challenges:
+      - 'Learning the Language': 'introduction/language.md'
+      - 'Integrating in LilyPond': 'introduction/integrating.md'
+      - 'Advanced Interaction': 'introduction/advanced.md'
+  - 'Scheme':
+    - Home: 'scheme/index.md'
+    - Introduction:
+      - "Everything's an Expression": 'scheme/expressions.md'
+      - 'Including Scheme in LilyPond': 'scheme/including.md'
+      - 'Music Function Primer': 'scheme/music-function-primer.md'
+    - 'Concepts':
+      - 'Intro': 'scheme/concepts.md'
+      - 'Data Types':
+        - 'Simple Data Types':
+          - 'Intro': 'scheme/data-types/README.md'
+          - 'Numbers': 'scheme/data-types/numbers.md'
+          - 'Booleans': 'scheme/data-types/booleans.md'
+          - 'Strings': 'scheme/data-types/strings.md'
+          - 'Symbols': 'scheme/data-types/symbols.md'
+        - 'Compound Data Types':
+          - 'Intro': 'scheme/data-types/compound.md'
+          - 'Lists and Pairs':
+            - 'Intro': 'scheme/data-types/lists-and-pairs/README.md'
+            - 'Creating Pairs': 'scheme/data-types/lists-and-pairs/creating-pairs.md'
+            - 'Accessing Pairs': 'scheme/data-types/lists-and-pairs/accessing-pairs.md'
+            - 'Creating Lists': 'scheme/data-types/lists-and-pairs/creating-lists.md'
+            - 'List Structure': 'scheme/data-types/lists-and-pairs/structure.md'
+            - 'Accessing Lists': 'scheme/data-types/lists-and-pairs/accessing-lists.md'
+            - 'Pairs vs. Lists': 'scheme/data-types/lists-and-pairs/list-pair-comparison.md'
+          - 'Vectors': 'scheme/data-types/vectors.md'
+        - 'Custom Types': 'scheme/data-types/custom.md'
+      - 'Equality and Equivalence': 'scheme/equality.md'
+      - 'Quoting':
+        - 'Intro': 'scheme/quoting/README.md'
+        - 'Preventing Evaluation': 'scheme/quoting/preventing-evaluation.md'
+        - 'Creating Lists and Pairs': 'scheme/quoting/lists-and-pairs.md'
+        - 'Unquoting': 'scheme/quoting/unquoting.md'
+      - 'Binding Variables':
+        - 'Intro': 'scheme/binding/README.md'
+        - 'Top-level Bindings': 'scheme/binding/top-level.md'
+        - 'Local Bindings': 'scheme/binding/local.md'
+        - 'Let': 'scheme/binding/let.md'
+        - 'Parenthesizing Errors': 'scheme/binding/paren-errors.md'
+        - 'let* and letrec': 'scheme/binding/letstar.md'
+      - 'Conditionals':
+        - 'Intro': 'scheme/conditionals/README.md'
+        - 'if': 'scheme/conditionals/if.md'
+        - 'cond': 'scheme/conditionals/cond.md'
+        - 'case': 'scheme/conditionals/case.md'
+        - 'not/and/or': 'scheme/conditionals/logical.md'
+    - 'Working With Lists':
+      - 'Intro': 'scheme/lists/README.md'
+      - 'List Operations':
+        - 'Accessing List Elements': 'scheme/lists/accessing.md'
+        - 'Extending and Reversing Lists': 'scheme/lists/extend-reverse.md'
+        - 'Filtering Lists': 'scheme/lists/filtering.md'
+        - 'Modifying Lists': 'scheme/lists/modifying.md'
+        - 'Iteration Over Lists': 'scheme/lists/iteration.md'
+      - 'Association Lists':
+        - 'Intro': 'scheme/alists/README.md'
+        - 'Lookup in Alists': 'scheme/alists/retrieving.md'
+        - 'Modifying Alists': 'scheme/alists/modifying.md'
+      - 'Iteration and Loops':
+        - 'Intro': 'scheme/loops/README.md'
+        - 'map': 'scheme/loops/map.md'
+        - 'for-each': 'scheme/loops/for-each.md'
+        - 'List Recursion': 'scheme/loops/recursion.md'
+        - 'Programming Loops': 'scheme/loops/do-while.md'
+    - 'Procedures':
+      - 'Defining Procedures': 'scheme/procedures/README.md'
+      - 'lambda Expressions': 'scheme/procedures/lambda.md'
+      - 'lambda Signatures': 'scheme/procedures/lambda-signatures.md'
+      - 'Binding Procedures': 'scheme/procedures/binding.md'
+      - 'Predicates': 'scheme/procedures/predicates.md'
+      - 'Parameter Types': 'scheme/procedures/parameter-types.md'
+  - 'Scheme in LilyPond':
+    - Home: 'lilypond/index.md'
+    - 'Switching Between Scheme and LilyPond': 'lilypond/functions/switch-languages.md'
+    - 'Music, Scheme and Void Functions': 'lilypond/functions/music-scheme-void.md'
+    - 'Interface of the functions': 'lilypond/functions/interface.md'
+    - 'Markup Functions': 'lilypond/functions/markup-functions.md'
+    - 'Creating Lists of Music Expressions': 'lilypond/functions/list-music-expressions.md'
+    - 'Old Stuff':
+      - 'Writing Music Functions': 'lilypond/old-stuff/functions/README.md'
+      - 'Getting to Grips with Scheme in LilyPond': 'lilypond/old-stuff/functions/01.md'
+      - 'Start Doing Something Useful': 'lilypond/old-stuff/functions/02.md'
+      - 'Reusing Code': 'lilypond/old-stuff/functions/03.md'
+      - 'Recursion': 'lilypond/old-stuff/functions/04.md'
+  - 'Advanced Interaction With Scheme':
+    - 'Intro': 'internals/index.md'
+    - 'Built-in Scheme Functions': 'internals/built-in/README.md'
+    - 'Overriding Stencils]': 'internals/overriding-stencils.md'
+    - 'Scheme Engravers': 'internals/engravers/README.md'
+    - 'Scheme Representation of Music': 'internals/scheme-music/README.md'
