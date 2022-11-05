@@ -1,5 +1,7 @@
 # Understanding Scheme In LilyPond
 
+*By Urs Liska*
+
 ## GNU LilyPond
 
 [GNU LilyPond](http://lilypond.org) is an extremely powerful and versatile text
@@ -118,3 +120,12 @@ at the top right and open an issue in the tracker. In addition, the first
 heading of each page includes an “edit” link leading to the actual page source;
 if you have an account on Github you will be able to edit the page and open a
 pull request for me to review.
+
+*Addendum:* As of this writing (November 2022), the original author of
+this book, Urs Liska, is no longer active in the LilyPond community.
+You are reading a version compiled from my
+[fork](https://github.com/Jean-Abou-Samra/lilyponds-scheme/) of Urs'
+[original GitHub repository](https://github.com/uliska/lilyponds-scheme).
+Any contributions should be submitted to this fork. See
+[here](https://lists.gnu.org/archive/html/lilypond-user/2022-11/msg00034.html)
+for some thoughts regarding the future of this resource. —Jean Abou Samra ([jean@abou-samra.fr](mailto:jean@abou-samra.fr))
