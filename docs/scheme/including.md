@@ -47,8 +47,7 @@ This feels very natural, but it can cause some confusion once one starts
 thinking about it.  The point is that it is actually the *LilyPond* parser that
 performs this transparent conversion.
 
-The same is true for strings *(TODO: should it be explained what a ”string”
-is?)* that can additionally be written with or without double quotes (*NOTE:*
+The same is true for [strings](https://en.wikipedia.org/wiki/String_(computer_science)) that can additionally be written with or without double quotes (*NOTE:*
 LilyPond/Scheme strings *have* to use *double* quotes, as single quotes have a
 completely different meaning).  Again, the following assignments are equivalent:
 
